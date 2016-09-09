@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>page2</title>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="css/file.css">
+    <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase-storage.js"></script>
+<script>
+// Initialize Firebase
+var config = {
+  apiKey: "AIzaSyBbfNtxsNwNmGNit5uvgJQ1hBKRNDsRBcY",
+  authDomain: "highresolves-cd50f.firebaseapp.com",
+  databaseURL: "https://highresolves-cd50f.firebaseio.com",
+  storageBucket: "highresolves-cd50f.appspot.com",
+};
+firebase.initializeApp(config);
+</script>
+<script src="index.js"></script>
+
+  </head>
+<body>
+<div id="form">
+  <h2 class="head">Fill in the details...</h2>
+  <h5 class="subheading">Only fields marked with an asterix are compulsory</h4>
+  <form>
+    <div id="input">
+      <input id="notjust" class="forminputs" type="text" name="notjust" placeholder="*I'm not just..." required autocomplete="off"><br>
+      <input id="also" class="forminputs" type="text" name="also" placeholder="*I'm also..." required autocomplete="off"><br>
+      <input class="forminputs" type="text" name="name" placeholder="Name"autocomplete="off"><br>
+      <input class="forminputs" type="text" name="email" placeholder="Email"autocomplete="off"><br>
+      <textarea id="story" class="forminputs" name="story" placeholder="Share your story/message..." rows="8"autocomplete="off"></textarea><br>
+      <label class="custom-file-upload">
+        <input id="f" type="file"/>
+        <span class="glyphicon glyphicon-camera" aria-hidden="true"></span>
+          Upload an Image
+      </label><br>
+      <button id="share" class="share" type="submit" value="SUBMIT">SHARE</button>
+    </div>
+
+  </form>
+</div>
+
+<div class="footer">
+  <p class="ftext ">
+    idk © 2016. All Rights Reserved
+  </p>
+</div>
+
+</body>
+
+</html>

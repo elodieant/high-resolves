@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html >
   <head>
+
+
     <meta charset="UTF-8">
     <title>High resolves</title>
-    
-    
-    
+
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
 
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/index.css">
 
-    
-    
-    
+
+  <!-- Leave out Storage -->
+  <!-- <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-storage.js"></script> -->
+
+
+
   </head>
-
-  <body>
 
     <body>
   <div id="images">
@@ -247,17 +248,15 @@
     <img class="image" src="http://sunfieldfarm.org/wp-content/uploads/2014/02/profile-placeholder.png">
     <img class="image" src="http://sunfieldfarm.org/wp-content/uploads/2014/02/profile-placeholder.png">
     <img class="image" src="http://sunfieldfarm.org/wp-content/uploads/2014/02/profile-placeholder.png">
-
   </div>
 
   <div class="center">
-
     <p class="mystory"> Share your story.</p>
-    <form>
-      <input class="notjust" type="text" name="notjust" placeholder="I'm not just...">
-      <input class="share" type="submit" value="SHARE"> </form>
+    <form action="file.html">
+      <input class="notjust" type="text" name="notjust" placeholder="I'm not just..." autocomplete="off" required>
+       <button class="share" type="submit" value="SUBMIT">
+    </form>
   </div>
-
 
   <div class="footer">
     <p class="ftext ">
@@ -266,10 +265,5 @@
   </div>
 
 </body>
-    
-    
-    
-    
-    
-  </body>
+
 </html>
